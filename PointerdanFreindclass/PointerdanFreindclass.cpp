@@ -13,7 +13,11 @@ class mahasiswa
 
 int main()
 {
-    mahasiswa mhs(1);       //Object mhs
+    mahasiswa mhs{1};       //Object mhs
     mhs.showNim();          //Member access Operator 
+
+    mahasiswa& refMhs = mhs;//pointer reference refmhs
+    refMhs.nim = 2;         //member acces operator
+    mhs.showNim();
 }
 
