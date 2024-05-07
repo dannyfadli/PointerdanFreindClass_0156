@@ -18,7 +18,15 @@ public:
     friend void manusia::showNilaiPelajar(pelajar& x);
 };
 
+void manusia::showNilaiPelajar(pelajar& x)
+{
+    cout << x.nilai;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    manusia budi;
+    pelajar pbudi;
+    budi.showNilaiPelajar(pbudi);
+    return 0;
 }
